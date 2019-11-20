@@ -56,7 +56,7 @@ const router = new Router({
         // =============================================================================
         {
             path: '',
-            component: () => import('@/layouts/full-page/FullPage.vue'),
+            component: () => import('./layouts/full-page/FullPage.vue'),
             children: [
                 // =============================================================================
                 // PAGES
@@ -64,7 +64,7 @@ const router = new Router({
                 {
                     path: '/pages/login',
                     name: 'page-login',
-                    component: () => import('@/views/pages/Login.vue')
+                    component: () => import('./views/pages/Login.vue')
                 },
                 {
                     path: '/pages/error-404',
@@ -79,7 +79,7 @@ const router = new Router({
             redirect: '/pages/error-404'
         }
     ],
-})
+});
 
 router.afterEach(() => {
     // Remove initial loading
@@ -87,6 +87,6 @@ router.afterEach(() => {
     if (appLoading) {
         appLoading.style.display = "none";
     }
-})
+});
 
 export default router
