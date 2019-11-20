@@ -20,31 +20,55 @@ var render = function() {
       "div",
       { staticClass: "flex btn-group" },
       [
-        _c("vs-button", {
-          attrs: {
-            type: "relief",
-            "icon-pack": "feather",
-            icon: "icon-plus-square"
-          }
-        }),
+        _c(
+          "vs-button",
+          {
+            attrs: {
+              type: "relief",
+              "icon-pack": "feather",
+              icon: "icon-plus-square"
+            }
+          },
+          [_vm._v("បន្ថែម")]
+        ),
         _vm._v(" "),
-        _c("vs-button", {
-          attrs: {
-            color: "warning",
-            type: "relief",
-            "icon-pack": "feather",
-            icon: "icon-edit"
-          }
-        }),
+        _c(
+          "vs-button",
+          {
+            attrs: {
+              color: "warning",
+              type: "relief",
+              "icon-pack": "feather",
+              icon: "icon-edit"
+            }
+          },
+          [_vm._v("កែប្រែ")]
+        ),
         _vm._v(" "),
-        _c("vs-button", {
-          attrs: {
-            color: "danger",
-            type: "relief",
-            "icon-pack": "feather",
-            icon: "icon-trash-2"
-          }
-        })
+        _c(
+          "vs-button",
+          {
+            attrs: {
+              type: "relief",
+              "icon-pack": "feather",
+              icon: "icon-package"
+            }
+          },
+          [_vm._v("អាប់គ្រេដ")]
+        ),
+        _vm._v(" "),
+        _c(
+          "vs-button",
+          {
+            attrs: {
+              color: "danger",
+              type: "relief",
+              "icon-pack": "feather",
+              icon: "icon-trash-2"
+            }
+          },
+          [_vm._v("លុប")]
+        )
       ],
       1
     )

@@ -3789,7 +3789,7 @@ i.wizard-icon {
 ==========================================================================================*/
 
 .btn-group button {
-  padding: 1rem 1.25rem !important;
+  padding: 1rem 1.25rem;
 }
 
 .btn-group :not(:last-child) {
