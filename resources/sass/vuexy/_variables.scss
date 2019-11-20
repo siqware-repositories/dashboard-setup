@@ -37,11 +37,11 @@ $black: #22292f;
         TYPOGRAPHY
 =========================================================*/
 
-$font-family-sans-serif:  "Montserrat", Helvetica, Arial, sans-serif !default;
-$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+$font-family-sans-serif:  "Montserrat", Helvetica, Arial, Battambang, sans-serif !default;
+$font-family-serif:       Georgia, "Times New Roman",Battambang, Times, serif !default;
 
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
-$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-monospace:   Menlo, Monaco,Battambang, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
 $font-size-base:          14px !default;

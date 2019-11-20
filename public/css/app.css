@@ -72,7 +72,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", Helvetica, Arial, Battambang, sans-serif;
   font-weight: 400;
   overflow-x: hidden;
   max-width: 100%;
@@ -991,7 +991,7 @@ u {
 ==========================================================================================*/
 
 code {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", Helvetica, Arial, Battambang, sans-serif;
 }
 
 [dir] code {
@@ -4197,8 +4197,8 @@ ul.bordered-items > li:not(:last-of-type):not([class*='shadow']) {
 }
 
 .vs-button {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
+  font-family: "Montserrat", Helvetica,Battambang, Arial, sans-serif;
+  font-size: 1.1rem;
 }
 
 .vs-button.vs-button-gradient:hover {
@@ -4206,7 +4206,7 @@ ul.bordered-items > li:not(:last-of-type):not([class*='shadow']) {
 }
 
 .vs-button:not(.vs-radius):not(.includeIconOnly):not(.small):not(.large) {
-  padding: .75rem 2rem;
+  padding: .5rem 1.2rem;
 }
 
 .vs-button:not(.vs-radius):not(.includeIconOnly):not(.small):not(.large).vs-button-border {
@@ -4653,7 +4653,7 @@ ul.bordered-items > li:not(:last-of-type):not([class*='shadow']) {
 .vs-textarea {
   font-size: 1rem;
   color: inherit;
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", Helvetica, Arial, Battambang, sans-serif;
   line-height: 1.6;
 }
 

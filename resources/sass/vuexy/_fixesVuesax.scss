@@ -61,8 +61,8 @@
 
 .vs-button {
 
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
+  font-family: "Montserrat", Helvetica,Battambang, Arial, sans-serif;
+  font-size: 1.1rem;
 
   &.vs-button-gradient {
     &:hover {
@@ -71,7 +71,7 @@
   }
 
   &:not(.vs-radius):not(.includeIconOnly):not(.small):not(.large) {
-    padding: .75rem 2rem;
+    padding: .5rem 1.2rem;
 
     &.vs-button-border {
       padding: .679rem 2rem;

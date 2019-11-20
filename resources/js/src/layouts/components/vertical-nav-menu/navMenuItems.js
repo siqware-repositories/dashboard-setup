@@ -11,7 +11,7 @@
 export default [
   {
     url: "/",
-    name: "Home",
+    name: "ផ្ទាំងដើម",
     slug: "home",
     icon: "HomeIcon",
   },

@@ -15,7 +15,40 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h4", [_vm._v("You are in home.")])
+  return _c("div", [
+    _c(
+      "div",
+      { staticClass: "flex btn-group" },
+      [
+        _c("vs-button", {
+          attrs: {
+            type: "relief",
+            "icon-pack": "feather",
+            icon: "icon-plus-square"
+          }
+        }),
+        _vm._v(" "),
+        _c("vs-button", {
+          attrs: {
+            color: "warning",
+            type: "relief",
+            "icon-pack": "feather",
+            icon: "icon-edit"
+          }
+        }),
+        _vm._v(" "),
+        _c("vs-button", {
+          attrs: {
+            color: "danger",
+            type: "relief",
+            "icon-pack": "feather",
+            icon: "icon-trash-2"
+          }
+        })
+      ],
+      1
+    )
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
