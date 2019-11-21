@@ -20,6 +20,7 @@
 		</vs-tab>
 		<vs-tab icon-pack="feather" icon="icon-lock" :label="!isSmallerScreen ? 'Change Password' : ''">
 			<div class="tab-change-pwd md:ml-4 md:mt-0 mt-4 ml-0">
+				<sub-tab></sub-tab>
 			</div>
 		</vs-tab>
 		<vs-tab icon-pack="feather" icon="icon-info" :label="!isSmallerScreen ? 'Info' : ''">
@@ -41,8 +42,10 @@
 	</vs-tabs>
 </template>
 <script>
+	import SubTab from "./SubTab";
 	export default {
 		components: {
+			SubTab
 		},
 		data() {
 			return {

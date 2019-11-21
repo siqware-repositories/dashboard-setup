@@ -51,8 +51,13 @@ import 'prismjs/themes/prism-tomorrow.css'
 // Note: In latest version you have to add it separately
 // import 'vue-select/dist/vue-select.css';
 
-
-Vue.config.productionTip = false
+// VeeValidate
+import VeeValidate from 'vee-validate'
+Vue.use(VeeValidate);
+//Tinymce Editor
+import tinymce from 'vue-tinymce-editor'
+Vue.component('tinymce', tinymce);
+Vue.config.productionTip = false;
 
 new Vue({
     router,

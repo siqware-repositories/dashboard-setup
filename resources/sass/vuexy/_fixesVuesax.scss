@@ -270,7 +270,15 @@
 .vs-input--input.hasIcon:not(.icon-after-input)+.vs-input--placeholder {
   padding-left: 3rem !important;
 }
-
+.vs-input--input.hasValue+.vs-placeholder-label, .vs-input--input:focus+.vs-placeholder-label {
+  font-size: 1rem !important;
+}
+label.vs-select--label {
+  font-size: 1rem !important;
+}
+.vuesax-app-is-ltr .vs-input--input.hasValue+.vs-placeholder-label {
+  padding-bottom: 0 !important;
+}
 // Search Box Text
 // .vs-input--input.large.hasIcon {
 //   padding: 1rem .8rem 1rem 3rem;
