@@ -57,7 +57,7 @@ Vue.use(VeeValidate);
 //Tinymce Editor
 import tinymce from 'vue-tinymce-editor'
 Vue.component('tinymce', tinymce);
-Vue.config.productionTip = false;
+Vue.config.productionTip = true;
 
 new Vue({
     router,
