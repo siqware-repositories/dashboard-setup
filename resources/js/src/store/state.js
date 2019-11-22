@@ -23,7 +23,7 @@ const userDefaults = {
   photoURL    : require("@assets/images/portrait/small/avatar-s-11.jpg"), // From Auth
   status      : "online",
   userRole    : "admin"
-}
+};
 
 // /////////////////////////////////////////////
 // State
@@ -42,10 +42,10 @@ const state = {
     starredPages            : navbarSearchAndPinList["pages"].data.filter((page) => page.is_bookmarked),
     theme                   : themeConfig.theme || "light",
     themePrimaryColor       : colors.primary,
-
     // Can be used to get current window with
     // Note: Above breakpoint state is for internal use of sidebar & navbar component
     windowWidth: null,
-}
+    appUrl:'http://localhost:3000/'
+};
 
 export default state

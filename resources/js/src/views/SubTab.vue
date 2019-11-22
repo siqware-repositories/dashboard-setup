@@ -39,17 +39,11 @@
                 </vs-select>
             </div>
             <div class="vx-col sm:w-1/2 w-full">
-                <vs-select
-                        class="w-full"
-                        autocomplete
-                        @input-change=""
-                        label="ប្រភេទ"
-                        v-model="user.type"
-                >
-                    <vs-select-item value="employee" text="Employee"/>
-                    <vs-select-item value="owner" text="Owner"/>
-                    <vs-select-item value="developer" text="Developer"/>
-                </vs-select>
+                <image-upload
+                        :upload-url="'file.upload'"
+                        @get-image-path="setThumb"
+                        :image-src="user.profile?user.profile:placeholder"
+                        class="mb-2"/>
             </div>
         </div>
         <div class="vx-row mb-2">
@@ -85,8 +79,10 @@
 </template>
 
 <script>
+    import ImageUpload from "../components/ImageUpload";
     export default {
         name: "SubTab",
+        components: {ImageUpload},
         data(){
             return{
                 /*user data*/
@@ -112,6 +108,17 @@
                     plugins:'link image imagetools table contextmenu',
                 }
             }
+        },
+        computed: {
+            placeholder() {
+                return this.$store.getters.getAppUrl + 'images/placeholder/placeholder.png'
+            }
+        },
+        methods: {
+            /*set thumbnail*/
+            setThumb(thumb) {
+                this.user.profile = thumb
+            },
         }
     }
 </script>

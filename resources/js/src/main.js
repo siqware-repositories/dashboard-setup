@@ -6,11 +6,8 @@
   Author: Pixinvent
   Author URL: http://www.themeforest.net/user/pixinvent
 ==========================================================================================*/
-
-
 import Vue from 'vue'
 import App from './App.vue'
-
 // Vuesax Component Framework
 import Vuesax from 'vuesax'
 
@@ -57,10 +54,9 @@ Vue.use(VeeValidate);
 //Tinymce Editor
 import tinymce from 'vue-tinymce-editor'
 Vue.component('tinymce', tinymce);
-Vue.config.productionTip = true;
-
+Vue.config.productionTip = false;
 new Vue({
     router,
     store,
     render: h => h(App)
-}).$mount('#app')
+}).$mount('#app');
