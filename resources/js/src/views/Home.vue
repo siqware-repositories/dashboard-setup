@@ -1,5 +1,6 @@
 <template>
 	<div>
+		<demo></demo>
 		<tinymce id="d2" v-model="data" :other_options="options"></tinymce>
 		<div class="flex btn-group">
 			<vs-button @click="is_popup=true" type="relief" icon-pack="feather" icon="icon-plus-square">បន្ថែម</vs-button>
@@ -14,8 +15,9 @@
 <script>
 	import AddHome from "./addHome";
 	import EditHome from "./editHome";
+	import Demo from "./demo/Demo";
 	export default {
-		components: {EditHome, AddHome},
+		components: {Demo, EditHome, AddHome},
 		data() {
 			return {
 				is_popup:false,
