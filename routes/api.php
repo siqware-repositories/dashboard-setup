@@ -13,8 +13,11 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::post('/file-upload','FileUploadController@upload')->name('file.upload');
+Route::resource('/auth','AuthController');
+Route::get('/auth-show','AuthController@index_show')->middleware('auth:api');
+Route::post('/auth-register','AuthController@register');
+Route::post('/auth-login','AuthController@login');
